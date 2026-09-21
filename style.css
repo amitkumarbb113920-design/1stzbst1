@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #8a110b, #5e471f, #c94305d7);
+
+    font-family: Georgia, serif;
+    color: white;
+
+    padding: 20px;
+}
+
+.welcome-card {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+
+    text-align: center;
+
+    animation: appear 1.2s ease;
+}
+
+.welcome-card h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.welcome-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #eeeeee;
+}
+
+button {
+    margin-top: 20px;
+
+    padding: 14px 32px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: white;
+    color: #302b63;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.25);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .welcome-card {
+        padding: 30px 22px;
+    }
+
+    .welcome-card h1 {
+        font-size: 29px;
+    }
+
+    .welcome-card p {
+        font-size: 16px;
+    }
+}
+
+.next-screen {
+    display: none;
+
+    width: 100%;
+    max-width: 700px;
+    animation: storyAppear 1s ease;
+}
+.story-card {
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+
+    text-align: left;
+}
+
+.story-label {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    opacity: 0.7;
+}
+
+.story-card h2 {
+    font-size: 32px;
+    margin-bottom: 28px;
+}
+
+.story-card p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #eeeeee;
+}
+
+.story-card button {
+    display: block;
+    margin: 30px auto 0;
+}
+
+@keyframes storyAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.prev-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 12px;
+}
+
+.prev-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.03);
+}
+
+/* This is the QUESTION PART */
+.choice-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.choice-btn {
+    min-width: 120px;
+}
+
+.choice-btn.selected {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.reason-section {
+    display: none;
+    margin-top: 25px;
+}
+
+.reason-section label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.reason-section textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    resize: vertical;
+    outline: none;
+}
+
+.reason-section textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.reason-section textarea:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.reason-error {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffb3b3;
+}
+
+@media (max-width: 600px) {
+
+    .choice-container {
+        gap: 10px;
+    }
+
+    .choice-btn {
+        min-width: 100px;
+    }
+}
+
+#sixth-screen label {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#sixth-screen textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    resize: vertical;
+    outline: none;
+}
+
+#sixth-screen textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#sixth-screen textarea:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.comfort-note {
+    margin-top: 20px;
+    font-size: 14px !important;
+    opacity: 0.65;
+}
+
+.final-card {
+    text-align: center;
+}
+
+.final-card p {
+    text-align: left;
+}
+
+.final-card .final-line {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+#submitBtn {
+    margin-top: 30px;
+}
+
+#seventhPrevBtn {
+    margin-top: 12px;
+}

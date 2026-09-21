@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SCREEN 1 -->
+    <div class="welcome-card">
+
+        <h1>Hello, The precious one</h1>
+
+        <p>
+            I'm Amitkumar.
+        </p>
+
+        <p>
+            don't think of this link as something useless
+            or meaningless. I've put some thought and feelings
+            into it, and I would really appreciate it if you could
+            give it a little of your time.
+        </p>
+
+        <p>
+            make some free time for yourself and open this
+            with a peaceful mind. There's no need to rush.
+        </p>
+
+        <p>
+            If you feel that right now isn't a good time,
+            that's completely okay. You can take your time.
+        </p>
+
+        <button id="proceedBtn">I'm Ready →</button>
+
+    </div>
+
+
+    <!-- SCREEN 2 -->
+    <div id="next-screen" class="next-screen">
+
+        <div class="story-card">
+
+            <span class="story-label">
+                A little something from the past...
+            </span>
+
+            <h2>Do you remember those days?</h2>
+
+            <p>
+                You know, I started studying seriously from 6th standard,
+                and you were the only reason behind it.
+            </p>
+
+            <p>
+                I wanted to escape from the embarrassment I felt whenever
+                teachers corrected or scolded me in front of you.
+                I used to feel very low whenever that happened.
+            </p>
+
+            <p>
+                Somehow, because of that, I started trying to overcome
+                those feelings and improve myself.
+            </p>
+
+            <p>
+                From 6th standard until SSLC, things were going well,
+                especially with my academics.
+            </p>
+
+            <button id="storyContinueBtn">
+                Continue →
+            </button>
+            <button id="prevBtn" class="prev-btn">
+                ← Previous
+            </button>
+
+        </div>
+
+    </div>
+<!-- SCREEN 3 -->
+<div id="third-screen" class="next-screen">
+
+    <div class="story-card">
+
+        <span class="story-label">
+            Then something changed...
+        </span>
+
+        <h2>But after 8th standard...</h2>
+
+        <p>
+            Something happened that changed a lot of things for me.
+            Those two years became one of the hardest phases of my life.
+        </p>
+
+        <p>
+            Even during that time, there was one thing I always
+            looked forward to — coming to school and seeing you.
+        </p>
+
+        <p>
+            You never missed school, not even a single day.
+            Somehow, knowing that I would see you every day
+            gave me a little comfort.
+        </p>
+
+        <p>
+            Looking back now, those memories still mean something
+            to me, even though that period wasn't easy.
+        </p>
+
+        <button id="thirdContinueBtn">
+            Continue →
+        </button>
+
+        <button id="thirdPrevBtn" class="prev-btn">
+            ← Previous
+        </button>
+
+    </div>
+
+</div>
+
+<!-- SCREEN 4 -->
+<div id="fourth-screen" class="next-screen">
+
+    <div class="story-card">
+
+        <span class="story-label">
+            One last thing...
+        </span>
+
+        <h2>There's something I've wanted to understand.</h2>
+
+        <p>
+            I know you may not want to revisit everything from the past,
+            and I understand that those memories may not bother you
+            in the same way they bother me.
+        </p>
+
+        <p>
+            I'm not bringing these things up to make you uncomfortable
+            or to make you relive anything.
+        </p>
+
+        <p>
+            I simply want to understand something that has been
+            on my mind for a long time.
+        </p>
+
+        <p>
+            And this is the one question I genuinely want to know
+            the answer to...
+        </p>
+
+        <button id="fourthContinueBtn">
+            Continue →
+        </button>
+
+        <button id="fourthPrevBtn" class="prev-btn">
+            ← Previous
+        </button>
+
+    </div>
+
+</div>
+
+<!-- SCREEN 5 -->
+<div id="fifth-screen" class="next-screen">
+
+    <div class="story-card">
+
+        <span class="story-label">
+            A question I've carried for a long time...
+        </span>
+
+        <h2>
+            If things had been different,
+            do you think we would still have
+            a healthy and good relationship today?
+        </h2>
+
+        <div class="choice-container">
+
+            <button type="button" id="yesBtn" class="choice-btn">
+                YES
+            </button>
+
+            <button type="button" id="noBtn" class="choice-btn">
+                NO
+            </button>
+
+        </div>
+
+        <div id="reason-section" class="reason-section">
+
+            <label for="reason">
+                What makes you feel that way?
+            </label>
+
+            <textarea
+                id="reason"
+                placeholder="Write your thoughts here..."
+                rows="5"
+            ></textarea>
+
+            <p id="reason-error" class="reason-error">
+                I'd really like to know your reason before you continue.
+            </p>
+
+        </div>
+
+        <button id="fifthContinueBtn">
+            Continue →
+        </button>
+
+        <button id="fifthPrevBtn" class="prev-btn">
+            ← Previous
+        </button>
+
+    </div>
+
+</div>
+
+<!-- SCREEN 6 -->
+<div id="sixth-screen" class="next-screen">
+
+    <div class="story-card">
+
+        <span class="story-label">
+            Looking ahead...
+        </span>
+
+        <h2>What does the future look like for you?</h2>
+
+        <p>
+            Since we've come this far, there's one more thing
+            I've wondered about.
+        </p>
+
+        <p>
+            If you're comfortable sharing, I'd like to know
+            about your future plans.
+        </p>
+
+        <label for="careerPlan">
+            Which city are you planning to move to for your career?
+        </label>
+
+        <textarea
+            id="careerPlan"
+            placeholder="Your thoughts..."
+            rows="3"
+        ></textarea>
+
+        <label for="marriagePlan">
+            And, if you're comfortable talking about it,
+            what are your thoughts or plans regarding marriage?
+        </label>
+
+        <textarea
+            id="marriagePlan"
+            placeholder="You can share whatever you're comfortable with..."
+            rows="4"
+        ></textarea>
+
+        <p class="comfort-note">
+            You can share only what you feel comfortable sharing.
+        </p>
+
+        <button id="sixthContinueBtn">
+            Continue →
+        </button>
+
+        <button id="sixthPrevBtn" class="prev-btn">
+            ← Previous
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- SCREEN 7 -->
+<div id="seventh-screen" class="next-screen">
+
+    <div class="story-card final-card">
+
+        <span class="story-label">
+            Before this little journey ends...
+        </span>
+
+        <h2>One last thing.</h2>
+
+        <p>
+            Whatever your answers are, I respect them.
+            There is no right or wrong answer here.
+        </p>
+
+        <p>
+            I just wanted to share a few things that have stayed
+            in my mind for a long time and understand your side
+            of the story.
+        </p>
+
+        <p>
+            Thank you for taking the time to go through everything
+            and for sharing your thoughts.
+        </p>
+
+        <p class="final-line">
+            With this, let's bring this little journey to an end.
+            ಎಲ್ಲೆ ಇರು ಹ್ಯಾಂಗೆ ಇರು ವಟ್ಟ ಚಂದ್ ಇರು 
+        </p>
+
+        <button id="submitBtn">
+            Finish →
+        </button>
+
+        <button id="seventhPrevBtn" class="prev-btn">
+            ← Previous
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FINAL SCREEN -->
+<div id="final-screen" class="next-screen">
+
+    <div class="story-card final-card">
+
+        <span class="story-label">
+            That's all...
+        </span>
+
+        <h2>thanku</h2>
+
+        <p>
+            Thank you for taking the time to go through everything
+            and for sharing your thoughts honestly.
+        </p>
+
+        <p>
+            Whatever your answers were, I respect them.
+           
+        </p>
+
+        <p class="final-line">
+            Some conversations are worth having,
+            even when they take a long time to have.
+        </p>
+        <button id="finalPrevBtn" class="prev-btn">← Previous</button>
+
+    </div>
+
+</div>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
