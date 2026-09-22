@@ -309,3 +309,67 @@ button:hover {
 #seventhPrevBtn {
     margin-top: 12px;
 }
+
+/* 🔐 Secret Code Screen */
+
+.lock-screen {
+    width: 100%;
+    max-width: 650px;
+    animation: appear 1s ease;
+}
+
+.lock-card {
+    padding: 45px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.lock-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.lock-card h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.lock-card p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 25px;
+}
+
+#secretCode {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+}
+
+#secretCode::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#secretCode:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.code-error {
+    display: none;
+    color: #ffb3b3 !important;
+    font-size: 14px !important;
+    margin-top: 12px;
+    margin-bottom: 0 !important;
+}
