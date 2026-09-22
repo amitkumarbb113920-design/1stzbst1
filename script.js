@@ -4,7 +4,7 @@ const secretCode = document.getElementById("secretCode");
 const unlockBtn = document.getElementById("unlockBtn");
 const codeError = document.getElementById("codeError");
 
-const SECRET_CODE = "1234";
+const SECRET_CODE = "Buddi";
 
 mainContent.style.display = "none";
 
