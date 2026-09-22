@@ -1,3 +1,29 @@
+const lockScreen = document.getElementById("lock-screen");
+const mainContent = document.getElementById("main-content");
+const secretCode = document.getElementById("secretCode");
+const unlockBtn = document.getElementById("unlockBtn");
+const codeError = document.getElementById("codeError");
+
+const SECRET_CODE = "1234";
+
+mainContent.style.display = "none";
+
+unlockBtn.addEventListener("click", function () {
+
+    if (secretCode.value === SECRET_CODE) {
+
+        lockScreen.style.display = "none";
+        mainContent.style.display = "block";
+
+    } else {
+
+        codeError.style.display = "block";
+        secretCode.value = "";
+        secretCode.focus();
+
+    }
+
+});
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
 import {
     getFirestore,
