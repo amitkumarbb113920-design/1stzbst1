@@ -11,6 +11,35 @@
 </head>
 
 <body>
+    <div id="lock-screen" class="lock-screen">
+    <div class="lock-card">
+
+        <div class="lock-icon">🔐</div>
+
+        <span class="story-label">A little secret...</span>
+
+        <h1>Before you enter</h1>
+
+        <p>
+           the password is just for safty purpose and 
+            it is the name(which starts from 'B') i used to call you
+        </p>
+
+        <input
+            type="password"
+            id="secretCode"
+            placeholder="Enter the secret code"
+            autocomplete="off"
+        >
+
+        <p id="codeError" class="code-error">
+            That code doesn't seem right. Try again.
+        </p>
+
+        <button id="unlockBtn">Unlock →</button>
+
+    </div>
+</div>
 
     <!-- SCREEN 1 -->
     <div class="welcome-card">
